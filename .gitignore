@@ -348,3 +348,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm,windows,macos,dotenv
+
+# my git ignore
+resize_result/
+test_code/
