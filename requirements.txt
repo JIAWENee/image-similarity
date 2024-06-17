@@ -4,3 +4,5 @@ opencv_python==4.9.0.80
 Pillow==10.0.0
 Pillow==10.3.0
 skimage==0.0
+torch==2.2.1
+transformers==4.31.0

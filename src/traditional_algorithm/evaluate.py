@@ -2,7 +2,7 @@ import cv2
 from typing import List
 from PIL import Image
 
-from quality_metrics import metric_functions
+from similarity_metrics import metric_functions
 
 
 def read_image(path: str, metric: str):
@@ -19,6 +19,7 @@ def _assert_image_shapes_equal(image1_path, image2_path):
 
     if image1.size != image2.size:
         raise ValueError("Input images must have the same dimensions")
+
 
 def evaluation(img_path_1: str, img_path_2: str, metrics: List[str]):
     """使用传统算法评估图片相似度"""
@@ -39,7 +40,7 @@ def evaluation(img_path_1: str, img_path_2: str, metrics: List[str]):
 
 
 if __name__ == '__main__':
-    evaluation(img_path_1="./example/3.jpg",
-               img_path_2="./example/3-watermark.jpg",
+    evaluation(img_path_1="../../example/3.jpg",
+               img_path_2="../../example/3-watermark.jpg",
                metrics=["ssim", "mse", "phash"]
                )

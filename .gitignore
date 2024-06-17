@@ -352,3 +352,5 @@ $RECYCLE.BIN/
 # my git ignore
 resize_result/
 test_code/
+dataset/
+models/

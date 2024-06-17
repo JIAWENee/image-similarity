@@ -6,7 +6,7 @@ import imagehash
 
 def ssim(img_1: np.ndarray, img_2: np.ndarray, max_p: int = 4095) -> float:
     """
-    Structural Simularity
+    Structural Similarity
     """
     return structural_similarity(img_1, img_2, data_range=max_p, channel_axis=2)
 
