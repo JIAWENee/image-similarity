@@ -66,6 +66,8 @@ python evaluate.py
 * python库：[structural_similarity](https://scikit-image.org/docs/stable/api/skimage.metrics.html#skimage.metrics.structural_similarity)
 
 ## 深度学习算法
+通过深度学习模型，将图片转化为向量表示，并使用相似度度量方法（如欧氏距离、余弦相似度、汉明距离等）计算相似度得分。在本项目中，使用了以下三种深度学习模型将图片转为向量表示，并通过余弦相似度计算图片的相似度。
+
 [以下部分数据来源GPT，仅供参考]
 
 |   模型名称   |                                                       vision transformer                                                        |                                                               swin transformer                                                                |                                                                           CLIP                                                                            |
